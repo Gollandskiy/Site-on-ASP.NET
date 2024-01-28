@@ -1,0 +1,79 @@
+﻿@page
+@model DZ1_28._01._2024_.Pages.CountriesModel
+@{
+	ViewData["Title"] = "List of Countries";
+}
+<style>
+    .country-block {
+        margin-bottom: 10px;
+        padding: 8px;
+        border: 1px solid #ccc;
+        background-color: #f8f8f8;
+        border-radius: 5px;
+        font-weight: bold;
+        list-style-type: none;
+    }
+</style>
+
+<h2 style="color: blue; font-size: 24px;">@ViewData["Title"]</h2>
+
+<ul style="list-style-type: none; padding: 0;">
+        <li class="country-block">
+            @Model.Countries[0]
+            <br />
+            @Model.Status[0]
+            <br />
+            @Model.SizeCountry[2]
+            <br />
+            @Model.Budget[2]
+            <br />
+        </li>
+</ul>
+<ul style="list-style-type: none; padding: 0;">
+        <li class="country-block">
+            @Model.Countries[1]
+            <br />
+            @Model.Status[1]
+            <br />
+            @Model.SizeCountry[2]
+            <br />
+            @Model.Budget[2]
+            <br />
+        </li>
+</ul>
+<ul style="list-style-type: none; padding: 0;">
+        <li class="country-block">
+            @Model.Countries[2]
+            <br />
+            @Model.Status[0]
+            <br />
+            @Model.SizeCountry[1]
+            <br />
+            @Model.Budget[1]
+            <br />
+        </li>
+</ul>
+<ul style="list-style-type: none; padding: 0;">
+        <li class="country-block">
+            @Model.Countries[3]
+            <br />
+            @Model.Status[1]
+            <br />
+            @Model.SizeCountry[1]
+            <br />
+            @Model.Budget[2]
+            <br />
+        </li>
+</ul>
+<ul style="list-style-type: none; padding: 0;">
+        <li class="country-block">
+            @Model.Countries[4]
+            <br />
+            @Model.Status[1]
+            <br />
+            @Model.SizeCountry[2]
+            <br />
+            @Model.Budget[2]
+            <br />
+        </li>
+</ul>
